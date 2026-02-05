@@ -3,7 +3,7 @@ import { api } from "./client";
 
 export const healthResponseSchema = z.object({
   status: z.string(),
-  timestmp: z.number(),
+  timestamp: z.number(),
 });
 
 export type HealthResponse = z.infer<typeof healthResponseSchema>;
